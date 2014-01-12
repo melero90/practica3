@@ -1,7 +1,8 @@
 Práctica 3: Diseño de máquinas virtuales
 ========================================
+#### Antonio Melero Bello
 
-### Descripción de la practica 
+### Descripción de la práctica 
 
 Diseñar una máquina virtual para una aplicación específica.
 
