@@ -1,5 +1,5 @@
 Práctica 3: Diseño de máquinas virtuales
-########################################
+========================================
 
 ### Descripción de la practica 
 
@@ -23,6 +23,8 @@ Lo que se hara en cada máquina será modificarlas para probar con distintas con
 En primer lugar se va a instalar el S.O.Debian7.3.0 que podemos descargar desde http://www.debian.org/index.es.html. Después procederemos con el sistema operativo Kubuntu en la versión 13.10 que podemos descargar desde http://www.kubuntu.org/getkubuntu
 
 Una vez instaladas las maquinas virtuales de Debian y Kubuntu se compararan dichas máquinas con Apache Benchmark, tambien conocido en otras asignaturas como Ingenieria de Servidores (ISE) el cual realiza pruebas de carga a un servidor apache y muestra una serie de resultados obtenidos.
+
+### Instalación de Debian
 
 ### Instalación de Kubuntu
 
