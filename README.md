@@ -57,14 +57,14 @@ Otra captura arrancando:
 
 y por último la máquina funcionando:
 
-![imagen8]()
+![imagen8](https://dl.dropbox.com/s/y3krkz79gplrek6/debiancorriendo.png)
 
 ### Instalación de Kubuntu
 
 De la misma forma que para instalar la máquina virtual de Debian
 
-Aqui una captura funcionando
+Aqui una captura funcionando:
 
-![imagen9]()
+![imagen9](https://dl.dropbox.com/s/y3krkz79gplrek6/debiancorriendo.png)
 
 
