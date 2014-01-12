@@ -71,26 +71,34 @@ Aqui una captura funcionando:
 
 Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 4096MB y 6144MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es dificil encontrar alguna computadora con estas características.
 
-Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración modificando dicho valor, se probaran con un único procesador, dos procesadores y cuatro procesadores. Una vez obtenidos los resultados se comparan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual deberiamos decantarnos.
+Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración y modificando dicho valor, se probaran con un único procesador, dos procesadores y cuatro procesadores. Una vez obtenidos los resultados se comparan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual máquina deberiamos decantarnos.
 
-Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor apache:
-En Debian lo instalamos con la siguiente orden: (aquí es su para superusuario)
+Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor Apache:
+En Debian lo instalamos con la siguiente orden desde el terminal de la máquina virtual:
 
 > su apt-get install apache2
 
-Ahora instalamos apacheBenchmark:
+Ahora instalamos ApacheBenchmark:
 
 > apt-get install apache2-utils
 
-La aplicación sobre la que realizaremos las pruebas la alojaremos en el servidor local (localhost) y será la utilizada hasta ahora en las practica 1 y 2 de la asignatura, el Periodico de la asignatura de Tecnologías web (TW)
+La aplicación sobre la que realizaremos las pruebas la alojaremos (copiamos) en el servidor local (localhost) y será la utilizada hasta ahora en las prácticas 1 y 2 de la asignatura, el Periódico de la asignatura de Tecnologías web (TW).
 
-Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación del periodico.
+Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación web del Periódico.
 
 > ab -n 100000 -c 100 http://localhost/
 
+Aquí una captura del benchmark en ejecución:
+
+![imagen10](https://dl.dropbox.com/s/z5crt2972xdi1hk/benchmarkdebian1.png)
+
+Y aquí una captura con los resultados obtenidos para un procesador y 512MB de memoria:
+
+![imagen11](https://dl.dropbox.com/s/xmzbazlr1fxwoiq/ejemploresultadoabdebian2.png)
+
 ### Resultados DEBIAN
 
-En esta tabla se muestran los resultados obtenidos para la máquina Debian un procesador:
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con un procesador:
 
 | Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
@@ -101,7 +109,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian un pr
 | 6144               |   179,129             |  556,88       |      179,129         |    246,52                       |
 
 
-En esta tabla se muestran los resultados obtenidos para la máquina Debian con dos procesadores (DualCore):
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con dos procesadores:
 
 | Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
@@ -112,7 +120,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con d
 | 6144               |   169,697             |  589,28       |      169,697         |    260,68                       |
 
 
-En esta tabla se muestran los resultados obtenidos para la máquina Debian con cuatro procesadores (QuadCore):
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con cuatro procesadores:
 
 | Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
@@ -125,12 +133,34 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con c
 
 ### Resultados KUBUNTU
 
-En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu:
+En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con un procesador:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
 | 512                |                       |               |                      |                                 | 
-| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 1024               |                       |               |                      |                                 |
+| 2048               |                       |               |                      |                                 |
+| 4096               |                       |               |                      |                                 |
+| 6144               |                       |               |                      |                                 |
+
+
+En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |                       |               |                      |                                 | 
+| 1024               |                       |               |                      |                                 |
+| 2048               |                       |               |                      |                                 |
+| 4096               |                       |               |                      |                                 |
+| 6144               |                       |               |                      |                                 |
+
+
+En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con cuatro procesadores:
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |                       |               |                      |                                 | 
+| 1024               |                       |               |                      |                                 |
 | 2048               |                       |               |                      |                                 |
 | 4096               |                       |               |                      |                                 |
 | 6144               |                       |               |                      |                                 |
