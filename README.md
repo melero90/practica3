@@ -71,8 +71,10 @@ Aqui una captura funcionando:
 
 Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 4096MB y 6144MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es dificil encontrar alguna computadora con estas características.
 
+Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración modificando dicho valor, se probaran con un único procesador, dos procesadores y cuatro procesadores. Una vez obtenidos los resultados se comparan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual deberiamos decantarnos.
+
 Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor apache:
-En Debian lo instalamos con la siguiente orden: (aquí es *su para superusuario)
+En Debian lo instalamos con la siguiente orden: (aquí es su para superusuario)
 
 > su apt-get install apache2
 
@@ -89,6 +91,17 @@ Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios
 ### Resultados DEBIAN
 
 En esta tabla se muestran los resultados obtenidos para la máquina Debian monoprocesador:
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |   185,775             |  538,29       |      185,775         |    238,29                       | 
+| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 2048               |   187,775             |  532,45       |      187,811         |    235,35                       |
+| 4096               |   178,232             |  560,03       |      178,232         |    247,44                       |
+| 6144               |   179,129             |  556,88       |      179,129         |    246,52                       |
+
+
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con dos procesadores (DualCore):
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
