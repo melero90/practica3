@@ -88,15 +88,27 @@ Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios
 
 ### Resultados DEBIAN
 
-En esta tabla se muestran los resultados obtenidos para la máquina Debian:
+En esta tabla se muestran los resultados obtenidos para la máquina Debian monoprocesador:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |                       |               |                      |                                 | 
-| $1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
-| 2048               |        |               |                 |                          |
-| 4096               |        |               |                 |                          |
-| 6144               |        |               |                 |                          |
+| 512                |   185,775             |  538,29       |      185,775         |    238,29                       | 
+| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 2048               |                       |               |                      |                                 |
+| 4096               |                       |               |                      |                                 |
+| 6144               |                       |               |                      |                                 |
+
+
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con cuatro procesadores (QuadCore):
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |   185,775             |  538,29       |      185,775         |    238,29                       | 
+| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 2048               |                       |               |                      |                                 |
+| 4096               |                       |               |                      |                                 |
+| 6144               |                       |               |                      |                                 |
+
 
 ### Resultados KUBUNTU
 
@@ -106,9 +118,9 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu:
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
 | 512                |                       |               |                      |                                 | 
 | 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
-| 2048               |        |               |                 |                          |
-| 4096               |        |               |                 |                          |
-| 6144               |        |               |                 |                          |
+| 2048               |                       |               |                      |                                 |
+| 4096               |                       |               |                      |                                 |
+| 6144               |                       |               |                      |                                 |
 
 ### Conclusiones
 
