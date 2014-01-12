@@ -69,7 +69,7 @@ Aqui una captura funcionando:
 
 ### Pruebas
 
-Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 4096MB y 6144MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es dificil encontrar alguna computadora con estas caracteristicas
+Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 4096MB y 6144MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es dificil encontrar alguna computadora con estas características.
 
 Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor apache:
 En Debian lo instalamos con la siguiente orden: (aquí es *su para superusuario)
@@ -93,7 +93,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian:
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
 | 512                |                       |               |                      |                                 | 
-| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| $1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
 | 2048               |        |               |                 |                          |
 | 4096               |        |               |                 |                          |
 | 6144               |        |               |                 |                          |
