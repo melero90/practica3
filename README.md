@@ -43,6 +43,28 @@ Por último indicamos la capacidad del disco duro virtual:
 
 ![imagen4](https://dl.dropbox.com/s/urz6unj0lmhmwhv/idebian5.png)
 
+Ahora iniciamos la máquina indicandole donde tenemos la imagen iso descargada y completamos una serie de pasos como idioma, fecha, nombre de la maquina, nombre de usuario y contraseña, programas a instalar etc.
+
+![imagen5](https://dl.dropbox.com/s/4791x8zeh6xz9e4/instalando%20debian1.png)
+
+Otra captura más:
+
+![imagen6](https://dl.dropbox.com/s/bvyxfd010pfgp2d/instalandodebian2.png)
+
+Otra captura arrancando:
+
+![imagen7](https://dl.dropbox.com/s/2lxrlai6fz3dysj/arrancandodebian3.png)
+
+y por último la máquina funcionando:
+
+![imagen8]()
+
 ### Instalación de Kubuntu
+
+De la misma forma que para instalar la máquina virtual de Debian
+
+Aqui una captura funcionando
+
+![imagen9]()
 
 
