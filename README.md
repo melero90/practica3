@@ -88,7 +88,7 @@ Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios
 
 ### Resultados DEBIAN
 
-En esta tabla se muestran los resultados obtenidos:
+En esta tabla se muestran los resultados obtenidos para la máquina Debian:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
@@ -99,6 +99,16 @@ En esta tabla se muestran los resultados obtenidos:
 | 6144               |        |               |                 |                          |
 
 ### Resultados KUBUNTU
+
+En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu:
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |                       |               |                      |                                 | 
+| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 2048               |        |               |                 |                          |
+| 4096               |        |               |                 |                          |
+| 6144               |        |               |                 |                          |
 
 ### Conclusiones
 
