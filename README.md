@@ -82,29 +82,21 @@ Ahora instalamos apacheBenchmark:
 
 La aplicación sobre la que realizaremos las pruebas la alojaremos en el servidor local (localhost) y será la utilizada hasta ahora en las practica 1 y 2 de la asignatura, el Periodico de la asignatura de Tecnologías web (TW)
 
-Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultaneos sobre el servidor local:
+Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación del periodico.
 
 > ab -n 100000 -c 100 http://localhost/
 
 ### Resultados DEBIAN
 
-RAM      T empleado         Solicitud/s         T peticion   Velocidad transferencia
+En esta tabla se muestran los resultados obtenidos:
 
-512MB
-
-1024MB    180,698s           553,41               180,698ms      244,82 Kb/s
-
-2048MB
-
-4096MB
-
-6144MB
-
-| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion |  Velocidad Transferencia | 
-| -------------------| --------------------- | ------------- | ----------------| -------------------------|
-| 512                | Celda 2, col2         |               |                 |                          |
-| Celda 3, col1      | Celda 3, col2         |               |                 |                          |
-
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |                       |               |                      |                                 | 
+| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
+| 2048               |        |               |                 |                          |
+| 4096               |        |               |                 |                          |
+| 6144               |        |               |                 |                          |
 
 ### Resultados KUBUNTU
 
