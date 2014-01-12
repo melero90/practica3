@@ -27,6 +27,22 @@ Una vez instaladas las maquinas virtuales de Debian y Kubuntu se compararan dich
 
 ### Instalación de Debian
 
+Arrancamos VirtualBox, pinchamos en nueva y introducimos el nombre y el tipo de máquina que vamos a instalar.
+
+![imagen1](https://dl.dropbox.com/s/z0sfoz9z3x1pz98/idebian1.png)
+
+A continuación indicamos el tamaño de la memoria:
+
+![imagen2](https://dl.dropbox.com/s/tujsjqqbaktt0yi/idebian2.png)
+
+Creamos un disco duro virtual y seleccionamos el siguiente tipo:
+
+![imagen3](https://dl.dropbox.com/s/59m5vx3ft4vflxj/idebian4.png)
+
+Por último indicamos la capacidad del disco duro virtual:
+
+![imagen4](https://dl.dropbox.com/s/urz6unj0lmhmwhv/idebian5.png)
+
 ### Instalación de Kubuntu
 
 
