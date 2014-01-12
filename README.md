@@ -90,15 +90,20 @@ Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios
 
 RAM      T empleado         Solicitud/s         T peticion   Velocidad transferencia
 
-512MB     180,698s           553,41               180,698ms      244,82 Kb/s
+512MB
 
-1024MB
+1024MB    180,698s           553,41               180,698ms      244,82 Kb/s
 
 2048MB
 
 4096MB
 
 6144MB
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion |  Velocidad Transferencia | 
+| -------------------| --------------------- | ------------- | ----------------| -------------------------|
+| 512                | Celda 2, col2         |               |                 |                          |
+| Celda 3, col1      | Celda 3, col2         |               |                 |                          |
 
 
 ### Resultados KUBUNTU
