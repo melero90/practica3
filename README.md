@@ -80,6 +80,14 @@ Ahora instalamos apacheBenchmark:
 
 > apt-get install apache2-utils
 
+La aplicación sobre la que realizaremos las pruebas la alojaremos en el servidor local (localhost) y será la utilizada hasta ahora en las practica 1 y 2 de la asignatura, el Periodico de la asignatura de Tecnologías web (TW)
 
+Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultaneos sobre el servidor local:
+
+> ab -n 100000 -c 100 http://localhost/
+
+### Resultados DEBIAN
+
+### Resultados KUBUNTU
 
 
