@@ -67,4 +67,19 @@ Aqui una captura funcionando:
 
 ![imagen9](https://dl.dropbox.com/s/y3krkz79gplrek6/debiancorriendo.png)
 
+### Pruebas
+
+Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB y 4096MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona).
+
+Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor apache:
+En Debian lo instalamos con la siguiente orden: (aquí es *su para superusuario)
+
+> su apt-get install apache2
+
+Ahora instalamos apacheBenchmark:
+
+> apt-get install apache2-utils
+
+
+
 
