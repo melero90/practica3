@@ -158,16 +158,6 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con d
 | 3072               |   170,247             |  587,39       |      170,247         |    259,84                       |
 
 
-En esta tabla se muestran los resultados obtenidos para la máquina Debian con cuatro procesadores:
-
-| Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
-| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |   172,331             |  580,27       |      172,331         |    256,70                       | 
-| 1024               |   170,966             |  584,91       |      170,966         |    258,75                       |
-| 2048               |   169,349             |  590,49       |      169,349         |    261,22                       |
-| 3072               |   169,228             |  590,91       |      169,228         |    261,41                       |
-
-
 ### Resultados KUBUNTU
 
 En esta captura se muestra la ejecución del benchmark en la máquina Kubuntu:
@@ -178,23 +168,13 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |                       |               |                      |                                 | 
-| 1024               |                       |               |                      |                                 |
-| 2048               |                       |               |                      |                                 |
-| 3072               |                       |               |                      |                                 |
+| 512                |     10,70             |    934,61     |    106,997           |   511,11                        | 
+| 1024               |     8,781             |    1138,84    |    87,805            |   622,80                        |
+| 2048               |     9,883             |    1011,82    |    98,832            |   553,34                        |
+| 3072               |     10,082            |    991,82     |    100,825           |   542,40                        |
 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
-
-| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
-| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |                       |               |                      |                                 | 
-| 1024               |                       |               |                      |                                 |
-| 2048               |                       |               |                      |                                 |
-| 3072               |                       |               |                      |                                 |
-
-
-En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con cuatro procesadores:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
