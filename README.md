@@ -148,18 +148,20 @@ Aquí una captura del benchmark en ejecución:
 
 Y aquí una captura con los resultados obtenidos para un procesador y 3072MB de memoria ram en una máquina Debian:
 
-![imagen11](https://www.dropbox.com/s/mgo6aq3r4iq980d/debian16.png)
+![imagen11](https://dl.dropbox.com/s/mgo6aq3r4iq980d/debian16.png)
 
 ### Resultados DEBIAN
+
+Nota: En ambas ejecuciones del benchmark el total transferido es 152300000 bytes y un transferido HTML de 149500000 bytes.
 
 En esta tabla se muestran los resultados obtenidos para la máquina Debian con un procesador:
 
 | Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |   185,775             |  538,29       |      185,775         |    238,29                       | 
-| 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
-| 2048               |   187,775             |  532,45       |      187,811         |    235,35                       |
-| 3072               |   178,232             |  560,03       |      178,232         |    247,44                       |
+| 512                |    18,119             |  551,98       |    181,185           |     8202,75                     | 
+| 1024               |    17,724             |  564,19       |    177,245           |     8391,25                     |
+| 2048               |    18,268             |  547,676      |    182,676           |     8141,76                     |
+| 3072               |    19,959             |  501,02       |    199,562           |     7451,74                     |
 
 
 ### Resultados KUBUNTU
@@ -178,9 +180,6 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 2048               |     9,883             |    1011,82    |    98,832            |   553,34                        |
 | 3072               |     10,082            |    991,82     |    100,825           |   542,40                        |
 
-Una captura con uno de los resultados obtenidos:
-
-![imagen24](https://dl.dropbox.com/s/0a244vtrff8v3f9/kubuntu14.png)
 
 ### Conclusiones
 
