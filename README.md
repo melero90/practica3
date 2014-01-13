@@ -103,7 +103,7 @@ Aqui una captura funcionando Kubuntu:
 
 ### Pruebas
 
-Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 4096MB y 6144MB (todos ellos dentro de los 8GB con los que cuenta mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es dificil encontrar alguna computadora con estas características.
+Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 3072MB(Tengo 8GB en mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es difícil encontrar alguna computadora con estas características.
 
 Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración y modificando dicho valor, se probaran con un único procesador, dos procesadores y cuatro procesadores. Una vez obtenidos los resultados se comparan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual máquina deberiamos decantarnos.
 
