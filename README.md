@@ -146,9 +146,9 @@ Aquí una captura del benchmark en ejecución:
 
 ![imagen10](https://dl.dropbox.com/s/z5crt2972xdi1hk/benchmarkdebian1.png)
 
-Y aquí una captura con los resultados obtenidos para un procesador y 512MB de memoria:
+Y aquí una captura con los resultados obtenidos para un procesador y 3072MB de memoria ram en una máquina Debian:
 
-![imagen11](https://dl.dropbox.com/s/xmzbazlr1fxwoiq/ejemploresultadoabdebian2.png)
+![imagen11](https://www.dropbox.com/s/mgo6aq3r4iq980d/debian16.png)
 
 ### Resultados DEBIAN
 
