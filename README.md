@@ -174,7 +174,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con d
 | 2048               |    2,185              |  4750,96      |    21,877            |     67984,14                    |
 | 3072               |    2,049              |  4881,48      |    20,480            |     72602,41                    |
 
-Como podemos ver la mejor configuración con dos procesadores es la de 512MB, no entiendo bien el porque pero han sido estos los resultados. Tambien me sorprende la gran disminución del tiempo de ejecucción del benchmark (ya sabemos que influye el estado de la red)
+Como podemos ver la mejor configuración con dos procesadores es la de 512MB, no entiendo bien el porque pero han sido estos los resultados. Tambien me sorprende la gran disminución del tiempo de ejecucción del benchmark (ya sabemos que influye el estado de la red) en respecto con un procesador. Me parece muy grande el sato.
 
 ![imagen26](https://dl.dropbox.com/s/ii3madq887p972d/debian2p.png)
 
@@ -197,6 +197,8 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 2048               |     9,883             |  1011,83      |    98,832            |   15049,12                      |
 | 3072               |     10,082            |  991,86       |    100,825           |   14752,07                      |
 
+Como podemos ver en esta ocasión hay diferencia entre la máquina con configuración de 1024MB y el resto. Se obtiene el mejor resultado con 1024MB y como se puede apreciar no hay significancia entre una maquina con 2GB y una con 3 GB. 
+
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
@@ -206,6 +208,13 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 2048               |     1,672             |  5980,90      |    98,832            |   88953,62                      |
 | 3072               |     1,632             |  6127,45      |    100,825           |   91133,86                      |
 
+Con dos procesadores se reduce considerablemente el tiempo de ejecución del benchmark, aunque con todas las configuraciones de memoria se obtienen casi los mismos tiempos. Dado que mejora la configuración de 512MB y que con el resto está muy igualada, la mejor configuración seria la de dos procesadores y 1024MB.
+
 ### Conclusiones
 
+Como hemos comentado las mejores configuraciones son dos procesadores o núcleos y 1024MB de memoria ram. Ahora para decantarme por una u otra me baso en otros conceptos como la instalación y el sistema en sí. Para instalar Debian he empleado una media hora y para Kubuntu más o menos lo mismo, aunque el proceso de instalación de Debian te hace configurar más propiedades que en Kubuntu, algo más sencillo en este sentido.
+
+La máquina Kubuntu requiere mas memoria de video ya que con 12MB por defecto se comporta algo lenta, tarda bastante más en arrancar que debian, que con esos 12MB no tiene problema alguno para ser fluida. En kubuntu ni aumentando a 128MB la memoria de video va tan bien como la máquina Debian, lo que quiere decir que consume menos recursos gráficos y por ello para nuestra aplicación instalada es mejor.
+
+Mi conclusión de esta práctica es que para la aplicación instalada es mejor Debian que Kubuntu. Debian me ha dejado muy buenas sensaciones de cara al futuro.
 
