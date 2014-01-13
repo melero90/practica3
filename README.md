@@ -120,7 +120,9 @@ En esta captura se muestra la instalación del servidor Apache y del ApacheBench
 
 ![imagen22](https://dl.dropbox.com/s/m3i9s4zxnhjzp8f/kubuntu11.png)
 
-La aplicación sobre la que realizaremos las pruebas la alojaremos (copiamos) en el servidor local (localhost) y será la utilizada hasta ahora en las prácticas 1 y 2 de la asignatura, el Periódico de la asignatura de Tecnologías web (TW).
+La aplicación sobre la que realizaremos las pruebas la alojaremos en el servidor local (localhost) y será la utilizada hasta ahora en las prácticas 1 y 2 de la asignatura, el Periódico de la asignatura de Tecnologías web (TW).
+Para tener la aplicación en nuestras máquinas virtuales, se ha subido a la cuenta de Dropbox y una vez dentro de las maquinas se han descargado desde la aplicación de dropbox que previamente hemos descargado e instalado.
+La copiamos dentro del directorio /var/www.
 
 Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación web del Periódico.
 
