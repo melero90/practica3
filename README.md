@@ -55,6 +55,10 @@ Otra captura arrancando:
 
 ![imagen7](https://dl.dropbox.com/s/2lxrlai6fz3dysj/arrancandodebian3.png)
 
+Aqui vemos como se carga el GRUB:
+
+![imagen25](https://dl.dropbox.com/s/ncq3vnndahb4sbf/debian15.png)
+
 y por último la máquina funcionando:
 
 ![imagen8](https://dl.dropbox.com/s/y3krkz79gplrek6/debiancorriendo.png)
@@ -116,23 +120,27 @@ Ahora instalamos ApacheBenchmark:
 
 > apt-get install apache2-utils
 
-En esta captura se muestra la instalación del servidor Apache y del ApacheBenchmark:
+En esta captura se muestra la instalación del servidor Apache y del Apache Benchmark:
 
 ![imagen22](https://dl.dropbox.com/s/m3i9s4zxnhjzp8f/kubuntu11.png)
 
 La aplicación sobre la que realizaremos las pruebas la alojaremos en el servidor local (localhost) y será la utilizada hasta ahora en las prácticas 1 y 2 de la asignatura, el Periódico de la asignatura de Tecnologías web (TW).
 Para tener la aplicación en nuestras máquinas virtuales, se ha subido a la cuenta de Dropbox y una vez dentro de las maquinas se han descargado desde la aplicación de dropbox que previamente hemos descargado e instalado.
-La copiamos dentro del directorio /var/www.
+La copiamos dentro del directorio /var/www y cambiamos los permisos como vemos en la siguiente captura:
+
+![imagen27](https://dl.dropbox.com/s/spgtvsqqgo9qmw6/debian11.png)
 
 Aquí la aplicación funcionando en Debian:
+
+![imagen26](https://dl.dropbox.com/s/hv2hynptr0xfyre/debian12.png)
 
 Aqui la aplicacion funcionando en Kubuntu:
 
 ![imagen23](https://dl.dropbox.com/s/msbincn6ybs8nbr/kubuntu13.png)
 
-Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación web del Periódico.
+Entonces vamos a ejecutar apache benchmark con 10.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación web del Periódico.
 
-> ab -n 100000 -c 100 http://localhost/
+> ab -n 10000 -c 100 http://localhost/
 
 Aquí una captura del benchmark en ejecución:
 
