@@ -61,11 +61,45 @@ y por último la máquina funcionando:
 
 ### Instalación de Kubuntu
 
-De la misma forma que para instalar la máquina virtual de Debian
+De la misma forma que para instalar la máquina virtual de Debian hacemos para kubuntu. En esta ocasión, ya que la creación de la máquina en virtualBox es identica solo que para este sistema, nos centraremos en la instalación del sistema operativo:
 
-Aqui una captura funcionando:
+![imagen12](https://dl.dropbox.com/s/q5dnqwjx6ctjw8s/kubuntu1.png)
 
-![imagen9](https://dl.dropbox.com/s/y3krkz79gplrek6/debiancorriendo.png)
+Seleccionamos 'Start Kubuntu' y empieza a cargarse el proceso de instalación:
+
+![imagen13](https://dl.dropbox.com/s/u5oy5n59b07342a/kubuntu2.png)
+
+Seleccionamos el idioma y pulsamos en instalar el sistema operativo:
+
+![imagen14](https://dl.dropbox.com/s/6g3qroowrtrvnfd/kubuntu3.png)
+
+Seleccionamos el tipo de instalación:
+
+![imagen15](https://dl.dropbox.com/s/sdcpsvqdhhmxe1f/kubuntu4.png)
+
+Seleccionamos la zona horaria:
+
+![imagen16](https://dl.dropbox.com/s/c54ia7es8gtp4vx/kubuntu5.png)
+
+Configuramos el teclado:
+
+![imagen17](https://dl.dropbox.com/s/0kgyhp6iyk77c68/kubuntu6.png)
+
+Ahora el nombre de usuario, contraseña, nombre del equipo, etc, etc.
+
+![imagen18](https://dl.dropbox.com/s/nfe8ufftfx1eeju/kubuntu7.png)
+
+Configurados estos parámetros, comienza el proceso de instalación:
+
+![imagen19](https://dl.dropbox.com/s/2kjjew3izvlu6vl/kubuntu8.png)
+
+Una vez instalada, reiniciamos la máquina:
+
+![imagen20](https://dl.dropbox.com/s/bw4uj8skp23jvv2/kubuntu9.png)
+
+Aqui una captura funcionando Kubuntu:
+
+![imagen21](https://dl.dropbox.com/s/7idzm18euhwtl7m/kubuntu10.png)
 
 ### Pruebas
 
@@ -81,6 +115,10 @@ En Debian lo instalamos con la siguiente orden desde el terminal de la máquina 
 Ahora instalamos ApacheBenchmark:
 
 > apt-get install apache2-utils
+
+En esta captura se muestra la instalación del servidor Apache y del ApacheBenchmark:
+
+![imagen22](https://dl.dropbox.com/s/m3i9s4zxnhjzp8f/kubuntu11.png)
 
 La aplicación sobre la que realizaremos las pruebas la alojaremos (copiamos) en el servidor local (localhost) y será la utilizada hasta ahora en las prácticas 1 y 2 de la asignatura, el Periódico de la asignatura de Tecnologías web (TW).
 
@@ -132,6 +170,10 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con c
 
 
 ### Resultados KUBUNTU
+
+En esta captura se muestra la ejecución del benchmark en la máquina Kubuntu:
+
+![imagen23](https://dl.dropbox.com/s/gd65fpeeonec7q7/kubuntu12.png)
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con un procesador:
 
