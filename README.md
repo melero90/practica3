@@ -124,6 +124,12 @@ La aplicación sobre la que realizaremos las pruebas la alojaremos en el servido
 Para tener la aplicación en nuestras máquinas virtuales, se ha subido a la cuenta de Dropbox y una vez dentro de las maquinas se han descargado desde la aplicación de dropbox que previamente hemos descargado e instalado.
 La copiamos dentro del directorio /var/www.
 
+Aquí la aplicación funcionando en Debian:
+
+Aqui la aplicacion funcionando en Kubuntu:
+
+![imagen23](https://dl.dropbox.com/s/msbincn6ybs8nbr/kubuntu13.png)
+
 Entonces vamos a ejecutar apache benchmark con 100.000 peticiones y 100 usuarios simultáneos sobre el servidor local en el que tenemos nuestra aplicación web del Periódico.
 
 > ab -n 100000 -c 100 http://localhost/
@@ -154,6 +160,7 @@ En esta captura se muestra la ejecución del benchmark en la máquina Kubuntu:
 
 ![imagen23](https://dl.dropbox.com/s/gd65fpeeonec7q7/kubuntu12.png)
 
+
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con un procesador:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
@@ -163,7 +170,9 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 2048               |     9,883             |    1011,82    |    98,832            |   553,34                        |
 | 3072               |     10,082            |    991,82     |    100,825           |   542,40                        |
 
+Una captura con uno de los resultados obtenidos:
 
+![imagen24](https://dl.dropbox.com/s/0a244vtrff8v3f9/kubuntu14.png)
 
 ### Conclusiones
 
