@@ -145,8 +145,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con u
 | 512                |   185,775             |  538,29       |      185,775         |    238,29                       | 
 | 1024               |   180,698             |  553,41       |      180,698         |    244,82                       |
 | 2048               |   187,775             |  532,45       |      187,811         |    235,35                       |
-| 4096               |   178,232             |  560,03       |      178,232         |    247,44                       |
-| 6144               |   179,129             |  556,88       |      179,129         |    246,52                       |
+| 3072               |   178,232             |  560,03       |      178,232         |    247,44                       |
 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Debian con dos procesadores:
@@ -156,8 +155,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con d
 | 512                |   176,554             |  566,39       |      176,554         |    250,56                       | 
 | 1024               |   174,556             |  572,89       |      174,556         |    253,43                       |
 | 2048               |   171,347             |  583,61       |      171,347         |    258,21                       |
-| 4096               |   170,247             |  587,39       |      170,247         |    259,84                       |
-| 6144               |   169,697             |  589,28       |      169,697         |    260,68                       |
+| 3072               |   170,247             |  587,39       |      170,247         |    259,84                       |
 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Debian con cuatro procesadores:
@@ -167,8 +165,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con c
 | 512                |   172,331             |  580,27       |      172,331         |    256,70                       | 
 | 1024               |   170,966             |  584,91       |      170,966         |    258,75                       |
 | 2048               |   169,349             |  590,49       |      169,349         |    261,22                       |
-| 4096               |   169,228             |  590,91       |      169,228         |    261,41                       |
-| 6144               |   168,489             |  593,51       |      168,489         |    262,56                       |
+| 3072               |   169,228             |  590,91       |      169,228         |    261,41                       |
 
 
 ### Resultados KUBUNTU
@@ -184,8 +181,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 512                |                       |               |                      |                                 | 
 | 1024               |                       |               |                      |                                 |
 | 2048               |                       |               |                      |                                 |
-| 4096               |                       |               |                      |                                 |
-| 6144               |                       |               |                      |                                 |
+| 3072               |                       |               |                      |                                 |
 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
@@ -195,8 +191,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 512                |                       |               |                      |                                 | 
 | 1024               |                       |               |                      |                                 |
 | 2048               |                       |               |                      |                                 |
-| 4096               |                       |               |                      |                                 |
-| 6144               |                       |               |                      |                                 |
+| 3072               |                       |               |                      |                                 |
 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con cuatro procesadores:
@@ -206,8 +201,8 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 | 512                |                       |               |                      |                                 | 
 | 1024               |                       |               |                      |                                 |
 | 2048               |                       |               |                      |                                 |
-| 4096               |                       |               |                      |                                 |
-| 6144               |                       |               |                      |                                 |
+| 3072               |                       |               |                      |                                 |
+
 
 ### Conclusiones
 
