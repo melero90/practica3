@@ -109,7 +109,7 @@ Aqui una captura funcionando Kubuntu:
 
 Una vez instaladas, con apache benchmark se comparará cada máquina para cuatro configuraciones distintas de memoria RAM; La configuración inicial de 512MB e iremos incrementando a 1024MB, 2048MB, 3072MB(Tengo 8GB en mi máquina anfitriona). Descartamos comenzar probando con menos memoria de 512MB ya que hoy en día es difícil encontrar alguna computadora con estas características.
 
-Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración modificando dicho valor se obtendran los resultados y se compararan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual máquina deberiamos decantarnos.
+Para cada una de los tamaños de la RAM, los cuales modificamos desde virtualBox, seleccionando la máquina y en la pestaña configuración modificando dicho valor se obtendran los resultados y se compararan con el propio SO para obtener conclusiones parciales del mismo y posteriormente con el otro SO a analizar para determinar por cual máquina deberiamos decantarnos. Para cada configuración se probara con uno y dos procesadores.
 
 Para poder hacer uso de apache benchmark tenemos que instalar previamente el servidor Apache:
 En Debian lo instalamos con la siguiente orden desde el terminal de la máquina virtual:
@@ -165,22 +165,46 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con u
 
 Como podemos ver la configuración de 1024MB obtiene los mejores resultados en cuanto al tiemplo empleado, seguida por la configuracion de 512MB que se queda muy cerca de esta. Sorprendentemente las configuraciones cuanta más memoria RAM son algo más lentas y eso me ha sorprendido bastante, ya que he ejecutado varias veces el benchmark y he calculado un tiempo promedio de todas ellas.
 
+En esta tabla se muestran los resultados obtenidos para la máquina Debian con dos procesadore:
+
+| Memoria RAM (MB)   |  Tiempo empleado(s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |    1,924              |  5197,09      |    19,242            |     77276,59                    | 
+| 1024               |    2,205              |  4950,46      |    20,203            |     73628,43                    |
+| 2048               |    2,185              |  4750,96      |    21,877            |     67984,14                    |
+| 3072               |    2,049              |  4881,48      |    20,480            |     72602,41                    |
+
+Como podemos ver la mejor configuración con dos procesadores es la de 512MB, no entiendo bien el porque pero han sido estos los resultados. Tambien me sorprende la gran disminución del tiempo de ejecucción del benchmark (ya sabemos que influye el estado de la red)
+
+![imagen26](https://dl.dropbox.com/s/ii3madq887p972d/debian2p.png)
+
+Esta claro que lo mejor que podemos coger de esta máquina es dos procesadores y una memoria de 512MB, aunque con 1024MB nuestro sistema irá más fluido ante posibles cambios.
+
+Como otros aportes, con dos procesadores la máquina va más fluida y tarda bastante menos en arrancar. Debian tiene la ventaja de que con 12Mb de memoria de video va muy bien ya que consume pocos recursos gráficos.
+
 ### Resultados KUBUNTU
 
 En esta captura se muestra la ejecución del benchmark en la máquina Kubuntu:
 
 ![imagen23](https://dl.dropbox.com/s/gd65fpeeonec7q7/kubuntu12.png)
 
-
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con un procesador:
 
 | Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
-| 512                |     10,70             |    934,61     |    106,997           |   511,11                        | 
-| 1024               |     8,781             |    1138,84    |    87,805            |   622,80                        |
-| 2048               |     9,883             |    1011,82    |    98,832            |   553,34                        |
-| 3072               |     10,082            |    991,82     |    100,825           |   542,40                        |
+| 512                |     10,70             |  934,57       |    106,997           |   13900,04                      | 
+| 1024               |     8,781             |  1138,82      |    87,805            |   16937,75                      |
+| 2048               |     9,883             |  1011,83      |    98,832            |   15049,12                      |
+| 3072               |     10,082            |  991,86       |    100,825           |   14752,07                      |
 
+En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
+
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
+| -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
+| 512                |     1,785             |  5602,24      |    106,997           |   83322,39                      | 
+| 1024               |     1,644             |  6082,72      |    87,805            |   90468,65                      |
+| 2048               |     1,672             |  5980,90      |    98,832            |   88953,62                      |
+| 3072               |     1,632             |  6127,45      |    100,825           |   91133,86                      |
 
 ### Conclusiones
 
