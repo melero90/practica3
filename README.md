@@ -166,7 +166,7 @@ En esta captura se muestra la ejecución del benchmark en la máquina Kubuntu:
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con un procesador:
 
-| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
 | 512                |     10,70             |    934,61     |    106,997           |   511,11                        | 
 | 1024               |     8,781             |    1138,84    |    87,805            |   622,80                        |
@@ -176,7 +176,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con 
 
 En esta tabla se muestran los resultados obtenidos para la máquina Kubuntu con dos procesadores:
 
-| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/peticion (ms) |  Velocidad Transferencia (Kb/s) | 
+| Memoria RAM (MB)   | Tiempo empleado (s)   | Solicitudes/s | Tiempo/petición (ms) |  Velocidad Transferencia (Kb/s) | 
 | -------------------| --------------------- | ------------- | -------------------- | ------------------------------- |
 | 512                |                       |               |                      |                                 | 
 | 1024               |                       |               |                      |                                 |
