@@ -163,6 +163,7 @@ En esta tabla se muestran los resultados obtenidos para la máquina Debian con u
 | 2048               |    18,268             |  547,676      |    182,676           |     8141,76                     |
 | 3072               |    19,959             |  501,02       |    199,562           |     7451,74                     |
 
+Como podemos ver la configuración de 1024MB obtiene los mejores resultados en cuanto al tiemplo empleado, seguida por la configuracion de 512MB que se queda muy cerca de esta. Sorprendentemente las configuraciones cuanta más memoria RAM son algo más lentas y eso me ha sorprendido bastante, ya que he ejecutado varias veces el benchmark y he calculado un tiempo promedio de todas ellas.
 
 ### Resultados KUBUNTU
 
